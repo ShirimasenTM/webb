@@ -1,11 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
-html, body {
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-}
 
 body {
+  padding-bottom: 60px;
   margin: 0;
   font-family: 'Cinzel Decorative', serif;
   background: url('../img/ui/bg.jpg') no-repeat center center fixed;
@@ -14,26 +10,28 @@ body {
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
-  cursor: auto;
+  cursor: url('../img/cursors/fantasy_cursor.cur'), auto;
 }
 
-
 main {
-  margin-top: 120px; /* enough to clear fixed header */
-  padding: 40px;
+  padding: 5vh 5vw;
   text-align: center;
   box-sizing: border-box;
   width: 100%;
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: rgba(15, 15, 20, 0.9);
   border-top: 2px solid #5c3b1e;
   padding: 20px;
   font-size: 1vw;
   color: #888;
   text-align: center;
+  z-index: 1000;
   width: 100%;
   box-sizing: border-box;
 }
-
