@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DarkHorizon</title>
+<!-- ==================== STYLES ==================== -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/loading.css">
+  <link rel="stylesheet" href="css/download.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+<!-- ==================== LOADERS ==================== -->
+  <script src="js/loader.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/modals.js"></script>
+  <div id="loading-screen"></div>
+
+<!-- ==================== HEADER SECTION ==================== -->
+<header>
+  <div style="text-align: center; width: 100%;">
+    <img src="img/ui/logo.png" alt="DarkHorizon Logo" class="logo" />
+
+    <!-- 🧭 Navigation Buttons -->
+    <div class="nav-buttons" style="justify-content: center; margin-top: 10px;">
+      <button onclick="showHomeView()">Home</button>
+      <button onclick="toggleProfile()"><i class="fas fa-user-shield"></i> Profile</button>
+      <button onclick="toggleLogin()">Login</button>
+      <button onclick="toggleRegister()">Register</button>
+      <button>Wiki</button>
+      <button onclick="showDownloadView()">Download</button>
+
+      <!-- 🔽 Dropdown: Ranking -->
+      <div class="dropdown">
+        <button class="dropdown-toggle">Ranking</button>
+          <div class="dropdown-menu">
+            <a href="#">Highest Level</a>
+            <a href="#">Highest Damage</a>
+            <a href="#">Play Time</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ======= MAIN CONTENT AREA ======= -->
+<main class="main-wrapper">
+  <div class="main-banner">
+    <div id="welcomeView">
+      <h1>Welcome to DarkHorizon</h1>
+      <p>Enter a world of shadows and glory, where every blade tells a story and every coin holds a soul. Join the battle and forge your legacy in the realm of DarkHorizon.</p>
+    </div>
+    <div id="downloadView" style="display: none;">
+      <h2 style="font-size: 2.5rem; color: #ff4d4d; margin-bottom: 20px;">Download DarkHorizon</h2>
+      <p style="font-size: 1.2rem; color: #d4c4a8; margin-bottom: 40px;">Prepare your gear and sharpen your blade. Download the latest version of DarkHorizon below.</p>
+      <a href="#" style="background-color: #8b0000; color: #fff; padding: 15px 30px; font-size: 1.2rem; border: 2px solid #5c3b1e; text-decoration: none; transition: 0.3s;">
+      <i class="fas fa-download"></i> Download Game Client
+      </a>
+      <div class="requirements">
+        <h3>System Requirements</h3>
+        <ul>
+        <li><strong>OS:</strong> Windows 10 (64-bit)</li>
+        <li><strong>Processor:</strong> Intel Core i5 or equivalent</li>
+        <li><strong>Memory:</strong> 8 GB RAM</li>
+        <li><strong>Graphics:</strong> NVIDIA GTX 960 / AMD RX 560 or better</li>
+        <li><strong>Storage:</strong> 20 GB available space</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ======= PROFILE PANEL ======= -->
+<div id="profilePanel">
+  <h3><i class="fas fa-user-shield"></i> Profile</h3>
+  <div class="profile-item"><i class="fas fa-user"></i> DarkKnight</div>
+  <div class="profile-item"><i class="fas fa-coins"></i> 1200 Gold</div>
+  <div class="profile-item"><i class="fas fa-crown"></i> Admin</div>
+  <button><i class="fas fa-sign-out-alt"></i> Logout</button>
+  <button><i class="fas fa-key"></i> Change Password</button>
+</div>
+
+<!-- ======= LOGIN / REGISTER MODALS ======= -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="toggleRegister()">&times;</button>
+    <h2>Inscribe Your Oath</h2>
+    <input type="text" placeholder="Username" />
+    <input type="email" placeholder="Email" />
+    <input type="password" placeholder="Password" />
+    <input type="password" placeholder="Confirm Password" />
+    <button>Register</button>
+  </div>
+</div>
+
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="toggleLogin()">&times;</button>
+    <h2>Enter the Gate</h2>
+    <input type="text" placeholder="Username" />
+    <input type="password" placeholder="Password" />
+    <button>Login</button>
+  </div>
+</div>
+
+<!-- ======= FOOTER ======= -->
+<footer style="position: fixed; bottom: 0; width: 100%; background: rgba(15, 15, 20, 0.9); border-top: 2px solid #5c3b1e; padding: 10px 0; text-align: center; font-size: 14px; color: #888; z-index: 1000;">
+  &copy; 2025 DarkHorizon. All rights reserved.
+</footer>
+</body>
+</html>

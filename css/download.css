@@ -1,0 +1,48 @@
+.main-banner {
+  margin-bottom: 80px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5vh 4vw;
+  border: 2px solid #5c3b1e;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.main-banner h1 {
+  font-size: 3vw;
+  margin-bottom: 20px;
+  color: #ff4d4d;
+}
+
+.main-banner p {
+  font-size: 1.25vw;
+  line-height: 1.5;
+}
+
+.requirements {
+  margin-top: 40px;
+  text-align: left;
+  background: rgba(15, 15, 20, 0.6);
+  border: 2px solid #5c3b1e;
+  border-radius: 10px;
+  padding: 20px;
+  color: #d4c4a8;
+  box-shadow: 0 0 12px rgba(139, 0, 0, 0.5);
+}
+
+.requirements h3 {
+  color: #f5c542;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.requirements ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.requirements li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}

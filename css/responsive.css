@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+  .nav-buttons button,
+  .dropdown-toggle,
+  .dropdown-menu a {
+    font-size: 14px;
+  }
+  .main-banner h1 {
+    font-size: 24px;
+  }
+  .main-banner p {
+    font-size: 16px;
+  }
+  .modal-content h2,
+  .modal-content input,
+  .modal-content button {
+    font-size: 14px;
+  }
+}
